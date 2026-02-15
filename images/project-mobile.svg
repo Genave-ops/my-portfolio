@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg-mob" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="phone-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="purple-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.1"/>
+    </linearGradient>
+    <linearGradient id="btn-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bg-mob)" rx="12"/>
+  <!-- Decorative circles -->
+  <circle cx="480" cy="80" r="120" fill="#7c3aed" opacity="0.03"/>
+  <circle cx="120" cy="320" r="100" fill="#7c3aed" opacity="0.03"/>
+  <!-- Phone 1 (main, center) -->
+  <rect x="220" y="30" width="160" height="310" rx="20" fill="url(#phone-body)" stroke="#7c3aed" stroke-width="2"/>
+  <!-- Phone notch -->
+  <rect x="270" y="36" width="60" height="12" rx="6" fill="#0a0a0a"/>
+  <!-- Phone screen area -->
+  <rect x="230" y="55" width="140" height="270" rx="4" fill="#0a0a0a" opacity="0.8"/>
+  <!-- Status bar -->
+  <text x="240" y="68" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" opacity="0.5">9:41</text>
+  <rect x="340" y="62" width="20" height="8" rx="2" fill="#ffffff" opacity="0.3"/>
+  <!-- App header -->
+  <rect x="230" y="75" width="140" height="35" fill="#7c3aed" opacity="0.15"/>
+  <text x="300" y="96" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" opacity="0.9" text-anchor="middle">My App</text>
+  <!-- Search bar -->
+  <rect x="240" y="118" width="120" height="18" rx="9" fill="#1a1a2e" stroke="#7c3aed" stroke-width="0.5"/>
+  <text x="254" y="130" font-family="Arial, sans-serif" font-size="7" fill="#ffffff" opacity="0.3">Search...</text>
+  <circle cx="348" cy="127" r="5" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.5"/>
+  <!-- Card 1 -->
+  <rect x="240" y="144" width="120" height="55" rx="6" fill="#1a1a2e" stroke="#7c3aed" stroke-width="0.5" opacity="0.8"/>
+  <rect x="250" y="154" width="40" height="4" rx="1" fill="#7c3aed" opacity="0.6"/>
+  <rect x="250" y="164" width="80" height="3" rx="1" fill="#ffffff" opacity="0.2"/>
+  <rect x="250" y="172" width="60" height="3" rx="1" fill="#ffffff" opacity="0.15"/>
+  <rect x="250" y="184" width="50" height="10" rx="4" fill="url(#btn-grad)" opacity="0.8"/>
+  <text x="264" y="192" font-family="Arial, sans-serif" font-size="6" fill="#ffffff">View</text>
+  <!-- Card 2 -->
+  <rect x="240" y="206" width="120" height="55" rx="6" fill="#1a1a2e" stroke="#7c3aed" stroke-width="0.5" opacity="0.8"/>
+  <rect x="250" y="216" width="36" height="4" rx="1" fill="#7c3aed" opacity="0.6"/>
+  <rect x="250" y="226" width="90" height="3" rx="1" fill="#ffffff" opacity="0.2"/>
+  <rect x="250" y="234" width="70" height="3" rx="1" fill="#ffffff" opacity="0.15"/>
+  <rect x="250" y="246" width="50" height="10" rx="4" fill="url(#btn-grad)" opacity="0.8"/>
+  <text x="264" y="254" font-family="Arial, sans-serif" font-size="6" fill="#ffffff">View</text>
+  <!-- Bottom nav bar -->
+  <rect x="230" y="290" width="140" height="35" rx="0" fill="#0f0f1a"/>
+  <line x1="230" y1="290" x2="370" y2="290" stroke="#7c3aed" stroke-width="0.5" opacity="0.3"/>
+  <!-- Nav icons (circles as placeholders) -->
+  <circle cx="260" cy="306" r="8" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="256" y="302" width="8" height="8" rx="1" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <circle cx="300" cy="306" r="8" fill="#7c3aed" opacity="0.3"/>
+  <circle cx="300" cy="306" r="4" fill="#7c3aed" opacity="0.8"/>
+  <circle cx="340" cy="306" r="8" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <rect x="336" y="303" width="8" height="6" rx="1" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <!-- Phone 2 (left, partially visible) -->
+  <rect x="70" y="70" width="130" height="270" rx="18" fill="url(#phone-body)" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <rect x="80" y="95" width="110" height="230" rx="4" fill="#0a0a0a" opacity="0.3"/>
+  <rect x="90" y="110" width="90" height="12" rx="3" fill="#7c3aed" opacity="0.1"/>
+  <rect x="90" y="130" width="90" height="50" rx="4" fill="#1a1a2e" opacity="0.3"/>
+  <rect x="90" y="190" width="90" height="50" rx="4" fill="#1a1a2e" opacity="0.3"/>
+  <!-- Phone 3 (right, partially visible) -->
+  <rect x="400" y="70" width="130" height="270" rx="18" fill="url(#phone-body)" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <rect x="410" y="95" width="110" height="230" rx="4" fill="#0a0a0a" opacity="0.3"/>
+  <rect x="420" y="110" width="90" height="12" rx="3" fill="#7c3aed" opacity="0.1"/>
+  <rect x="420" y="130" width="90" height="50" rx="4" fill="#1a1a2e" opacity="0.3"/>
+  <rect x="420" y="190" width="90" height="50" rx="4" fill="#1a1a2e" opacity="0.3"/>
+  <!-- Platform icons -->
+  <!-- Android icon (left) -->
+  <g transform="translate(135, 355)" opacity="0.5">
+    <rect x="-8" y="-4" width="16" height="12" rx="4" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <line x1="-4" y1="-8" x2="-6" y2="-5" stroke="#7c3aed" stroke-width="1.2"/>
+    <line x1="4" y1="-8" x2="6" y2="-5" stroke="#7c3aed" stroke-width="1.2"/>
+    <circle cx="-3" cy="-1" r="1" fill="#7c3aed"/>
+    <circle cx="3" cy="-1" r="1" fill="#7c3aed"/>
+  </g>
+  <!-- Apple icon (right) -->
+  <g transform="translate(465, 355)" opacity="0.5">
+    <ellipse cx="0" cy="2" rx="6" ry="8" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <path d="M 0,-6 Q 4,-10 6,-6" fill="none" stroke="#7c3aed" stroke-width="1"/>
+  </g>
+  <!-- Connecting lines -->
+  <line x1="200" y1="200" x2="220" y2="200" stroke="#7c3aed" stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  <line x1="380" y1="200" x2="400" y2="200" stroke="#7c3aed" stroke-width="1" opacity="0.2" stroke-dasharray="3,3"/>
+  <!-- Project name -->
+  <text x="300" y="380" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="3">Cross-Platform Mobile App</text>
+</svg>

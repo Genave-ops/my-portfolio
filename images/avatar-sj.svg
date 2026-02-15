@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg-sj" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="silhouette-sj" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.25"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.08"/>
+    </linearGradient>
+    <clipPath id="circle-clip-sj">
+      <circle cx="60" cy="60" r="54"/>
+    </clipPath>
+  </defs>
+  <!-- Outer ring -->
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.3"/>
+  <!-- Main circle border -->
+  <circle cx="60" cy="60" r="55" fill="url(#bg-sj)" stroke="#7c3aed" stroke-width="2.5"/>
+  <!-- Inner subtle glow -->
+  <circle cx="60" cy="50" r="30" fill="#7c3aed" opacity="0.03"/>
+  <!-- Female silhouette (clipped to circle) -->
+  <g clip-path="url(#circle-clip-sj)">
+    <!-- Head -->
+    <circle cx="60" cy="40" r="16" fill="url(#silhouette-sj)" stroke="#7c3aed" stroke-width="0.8" opacity="0.6"/>
+    <!-- Hair silhouette (longer, feminine) -->
+    <ellipse cx="60" cy="38" rx="20" ry="20" fill="url(#silhouette-sj)" opacity="0.3"/>
+    <ellipse cx="46" cy="48" rx="8" ry="14" fill="url(#silhouette-sj)" opacity="0.2"/>
+    <ellipse cx="74" cy="48" rx="8" ry="14" fill="url(#silhouette-sj)" opacity="0.2"/>
+    <!-- Shoulders / Body (narrower, feminine) -->
+    <ellipse cx="60" cy="102" rx="28" ry="28" fill="url(#silhouette-sj)" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+    <!-- Neck -->
+    <rect x="54" y="54" width="12" height="18" rx="4" fill="url(#silhouette-sj)" opacity="0.4"/>
+    <!-- Subtle collar detail -->
+    <path d="M 44,78 Q 52,72 60,76 Q 68,72 76,78" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <!-- Initials -->
+  <text x="60" y="68" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle" opacity="0.85" letter-spacing="2">SJ</text>
+  <!-- Decorative dots on border -->
+  <circle cx="60" cy="3" r="2" fill="#7c3aed" opacity="0.5"/>
+  <circle cx="60" cy="117" r="2" fill="#7c3aed" opacity="0.5"/>
+</svg>

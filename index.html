@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genave Pierre Adrien | Full Stack Developer</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+    <!-- ==================== PRELOADER ==================== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <span class="loader-text">Loading</span>
+        </div>
+    </div>
+
+    <!-- ==================== SKIP LINK (Accessibility) ==================== -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-accent">&lt;</span>Genave<span class="brand-accent">/&gt;</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu" aria-controls="navMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navMenu" aria-labelledby="navMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="navMenuLabel">
+                        <span class="brand-accent">&lt;</span>Menu<span class="brand-accent">/&gt;</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-lg-2">
+                            <button class="btn btn-sm btn-outline-accent rounded-pill px-3" id="themeToggle" aria-label="Toggle theme">
+                                <i class="fa-solid fa-moon" id="themeIcon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main id="main-content">
+
+        <!-- ==================== HERO SECTION ==================== -->
+        <section id="hero" class="hero-section d-flex align-items-center min-vh-100">
+            <div class="hero-bg-animation" aria-hidden="true">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape shape-4"></div>
+                <div class="floating-shape shape-5"></div>
+            </div>
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 order-first order-lg-last text-center mb-4 mb-lg-0">
+                        <div class="hero-image-wrapper reveal">
+                            <div class="hero-image-container">
+                                <img src="profile.png" alt="Genave Pierre Adrien profile photo" class="hero-image" width="400" height="400">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 order-last order-lg-first">
+                        <p class="hero-greeting reveal">Hello, I'm</p>
+                        <h1 class="hero-name reveal">
+                            Genave <span class="text-accent">Pierre Adrien</span>
+                        </h1>
+                        <div class="hero-title-wrapper reveal">
+                            <span class="hero-title-prefix">I'm a&nbsp;</span>
+                            <span class="typing-text" id="typingText"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                        <p class="hero-description reveal mt-3">
+                            A dedicated and innovative developer from Mauritius, skilled in system architecture
+                            and delivering end-to-end software solutions across web, mobile, and gaming platforms.
+                        </p>
+                        <div class="hero-buttons reveal mt-4">
+                            <a href="#portfolio" class="btn btn-accent btn-lg rounded-pill me-3">
+                                <i class="fa-solid fa-eye me-2"></i>View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill">
+                                <i class="fa-solid fa-paper-plane me-2"></i>Contact Me
+                            </a>
+                        </div>
+                        <div class="hero-social reveal mt-5">
+                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/genave-pierre-adrien-99a8a3343" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:genave.adrien.prof@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator" aria-hidden="true">
+                    <div class="mouse">
+                        <div class="mouse-wheel"></div>
+                    </div>
+                    <span>Scroll Down</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about" class="section-padding" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title" id="about-heading">About <span class="text-accent">Me</span></h2>
+                </div>
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="about-image-wrapper reveal-3d-left">
+                            <div class="about-image-container">
+                                <img src="profile.png" alt="Genave Pierre Adrien about photo" class="about-image" width="500" height="600" loading="lazy">
+                            </div>
+                            <div class="about-experience-badge glass-card">
+                                <span class="badge-number">3+</span>
+                                <span class="badge-text">Years<br>Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="about-content reveal-3d-right">
+                            <h3 class="mb-3">A passionate developer based in <span class="text-accent">Mauritius</span></h3>
+                            <p class="text-muted-custom">
+                                I'm a Full Stack Developer with strong experience in ASP.NET, C#, SQL Server,
+                                and modern front-end frameworks. Currently pursuing my BSc in Software Engineering
+                                at the University of Technology, Mauritius, I specialize in building end-to-end
+                                software solutions that solve real-world problems.
+                            </p>
+                            <p class="text-muted-custom">
+                                With hands-on experience in machine learning, mobile development with Flutter
+                                and React Native, blockchain concepts, and game development, I'm creative,
+                                adaptable, and passionate about building impactful digital products across
+                                web, mobile, and gaming platforms. I'm also a Web Cup competitor at both
+                                Junior and Senior levels.
+                            </p>
+                            <div class="row mt-4">
+                                <div class="col-6 col-md-3 mb-3">
+                                    <div class="stat-card glass-card text-center">
+                                        <span class="stat-number counter" data-target="10">0</span>
+                                        <span class="stat-suffix">+</span>
+                                        <p class="stat-label">Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-3">
+                                    <div class="stat-card glass-card text-center">
+                                        <span class="stat-number counter" data-target="3">0</span>
+                                        <span class="stat-suffix">+</span>
+                                        <p class="stat-label">Years Study</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-3">
+                                    <div class="stat-card glass-card text-center">
+                                        <span class="stat-number counter" data-target="3">0</span>
+                                        <span class="stat-suffix"></span>
+                                        <p class="stat-label">Languages</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-3">
+                                    <div class="stat-card glass-card text-center">
+                                        <span class="stat-number counter" data-target="2">0</span>
+                                        <span class="stat-suffix">x</span>
+                                        <p class="stat-label">Web Cup</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-accent rounded-pill mt-3">
+                                <i class="fa-solid fa-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS SECTION ==================== -->
+        <section id="skills" class="section-padding bg-section-alt" aria-labelledby="skills-heading">
+            <div class="container">
+                <div class="section-header text-center reveal-3d">
+                    <span class="section-subtitle">What I Know</span>
+                    <h2 class="section-title" id="skills-heading">My <span class="text-accent">Skills</span></h2>
+                </div>
+                <div class="row mt-5">
+                    <!-- Technical Skills - Progress Bars -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="reveal">
+                            <h4 class="mb-4">Technical Skills</h4>
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">ASP.NET / C#</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">SQL Server / MongoDB</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">JavaScript / HTML / CSS</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">Flutter / React Native</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="skill-name">Python / Machine Learning</span>
+                                    <span class="skill-percent">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools & Technologies -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="reveal">
+                            <h4 class="mb-4">Tools & Technologies</h4>
+                            <div class="row g-3">
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-code"></i>
+                                        <span>C# / .NET</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-database"></i>
+                                        <span>SQL Server</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-js"></i>
+                                        <span>JavaScript</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-python"></i>
+                                        <span>Python</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-html5"></i>
+                                        <span>HTML5</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <span>CSS3</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                        <span>Flutter</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-react"></i>
+                                        <span>React Native</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-brands fa-git-alt"></i>
+                                        <span>Git</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-database"></i>
+                                        <span>MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-cube"></i>
+                                        <span>Blender</span>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="tool-card glass-card text-center">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <span>Construct</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SERVICES SECTION ==================== -->
+        <section id="services" class="section-padding" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-header text-center reveal-3d">
+                    <span class="section-subtitle">What I Do</span>
+                    <h2 class="section-title" id="services-heading">My <span class="text-accent">Services</span></h2>
+                </div>
+                <div class="row mt-5 g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h4>Full Stack Development</h4>
+                            <p>Building end-to-end web applications with ASP.NET, C#, SQL Server, and modern front-end frameworks with clean architecture.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h4>Mobile Development</h4>
+                            <p>Creating cross-platform mobile applications with Flutter and React Native that deliver native-like experiences on iOS and Android.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h4>Machine Learning</h4>
+                            <p>Developing ML models with Python for classification, regression, and data processing to extract insights and automate workflows.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-gamepad"></i>
+                            </div>
+                            <h4>Game Development</h4>
+                            <p>Designing and developing web and mobile games using Construct, combining creative storytelling with interactive gameplay.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <h4>System Architecture</h4>
+                            <p>Creating architecture diagrams, ERDs, UML models, and functional requirement documentation for robust software systems.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service-card glass-card reveal-3d">
+                            <div class="service-icon">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h4>Creative Production</h4>
+                            <p>3D modeling in Blender, music production, photo and video editing — bringing creative vision to life across digital media.</p>
+                            <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PORTFOLIO SECTION ==================== -->
+        <section id="portfolio" class="section-padding bg-section-alt" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <div class="section-header text-center reveal-3d">
+                    <span class="section-subtitle">My Recent Work</span>
+                    <h2 class="section-title" id="portfolio-heading">Featured <span class="text-accent">Projects</span></h2>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="portfolio-filters text-center mt-4 mb-5 reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="creative">Creative</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="row g-4" id="portfolioGrid">
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-clen.svg" alt="CLEn Portal project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>CLEn Portal</h5>
+                                        <p>ASP.NET, C#, SQL Server</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" data-bs-toggle="modal" data-bs-target="#projectModal1" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>CLEn Portal</h5>
+                                <div class="project-tags">
+                                    <span>ASP.NET</span><span>C#</span><span>SQL Server</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="mobile">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-mobile.svg" alt="Flutter Mobile App project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>Cross-Platform Mobile App</h5>
+                                        <p>Flutter, React Native</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" data-bs-toggle="modal" data-bs-target="#projectModal2" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>Cross-Platform Mobile App</h5>
+                                <div class="project-tags">
+                                    <span>Flutter</span><span>React Native</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-ml.svg" alt="Machine Learning project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>ML Data Processing</h5>
+                                        <p>Python, Scikit-learn, Pandas</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" data-bs-toggle="modal" data-bs-target="#projectModal3" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>ML Data Processing</h5>
+                                <div class="project-tags">
+                                    <span>Python</span><span>Scikit-learn</span><span>Pandas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="creative">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-game.svg" alt="Game Development project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>Web & Mobile Game</h5>
+                                        <p>Construct, Game Design</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>Web & Mobile Game</h5>
+                                <div class="project-tags">
+                                    <span>Construct</span><span>Game Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="web">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-csv.svg" alt="Data Processing Automation project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>CSV Data Automation</h5>
+                                        <p>C#, ASP.NET, SQL Server</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>CSV Data Automation</h5>
+                                <div class="project-tags">
+                                    <span>C#</span><span>ASP.NET</span><span>SQL Server</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 portfolio-item" data-category="creative">
+                        <div class="project-card reveal-3d">
+                            <div class="project-image">
+                                <img src="images/project-3d.svg" alt="3D and Creative Media project screenshot" width="600" height="400" loading="lazy">
+                                <div class="project-overlay">
+                                    <div class="project-overlay-content">
+                                        <h5>3D & Creative Media</h5>
+                                        <p>Blender, Video Editing</p>
+                                        <div class="project-links">
+                                            <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View source code"><i class="fa-brands fa-github"></i></a>
+                                            <button class="project-link" aria-label="View project details"><i class="fa-solid fa-expand"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h5>3D & Creative Media</h5>
+                                <div class="project-tags">
+                                    <span>Blender</span><span>Video Editing</span><span>Music</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECT MODALS ==================== -->
+        <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content glass-card">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="projectModal1Label">CLEn Portal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/project-clen.svg" alt="CLEn Portal" class="img-fluid rounded-3 mb-3" loading="lazy">
+                        <p>A full-stack digital transformation system developed during my industrial placement at the School of Business Management & Finance, UTM. Led back-end development including authentication, evaluation forms, CSV bulk upload, deadline manager, and database structures. Created architecture diagrams, ERDs, and functional requirement documentation. Conducted system testing and delivered training sessions to staff and students.</p>
+                        <div class="project-tags mt-3">
+                            <span>ASP.NET</span><span>C#</span><span>SQL Server</span><span>JavaScript</span><span>System Architecture</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-pill"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content glass-card">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="projectModal2Label">Cross-Platform Mobile App</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/project-mobile.svg" alt="Cross-Platform Mobile App" class="img-fluid rounded-3 mb-3" loading="lazy">
+                        <p>Cross-platform mobile application built with Flutter and React Native, delivering native-like performance on both iOS and Android. Features include responsive UI, state management, and seamless integration with back-end APIs.</p>
+                        <div class="project-tags mt-3">
+                            <span>Flutter</span><span>React Native</span><span>Dart</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-pill"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content glass-card">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="projectModal3Label">ML Data Processing</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/project-ml.svg" alt="ML Data Processing" class="img-fluid rounded-3 mb-3" loading="lazy">
+                        <p>Machine learning project implementing classification and regression models using Python. Features include CSV parsing, data cleaning, feature engineering, model training, and automated data processing pipelines for real-world datasets.</p>
+                        <div class="project-tags mt-3">
+                            <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Data Processing</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-pill"><i class="fa-brands fa-github me-2"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== TESTIMONIALS SECTION ==================== -->
+        <section id="testimonials" class="section-padding" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <div class="section-header text-center reveal-3d">
+                    <span class="section-subtitle">What People Say</span>
+                    <h2 class="section-title" id="testimonials-heading">Client <span class="text-accent">Testimonials</span></h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div id="testimonialCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="testimonial-card glass-card text-center">
+                                        <div class="testimonial-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p class="testimonial-text">"Exceptional work! The website exceeded all our expectations. The attention to detail and performance optimization was remarkable. Highly recommend for any web project."</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/avatar-jd.svg" alt="John Doe avatar" class="testimonial-avatar" width="60" height="60" loading="lazy">
+                                            <div>
+                                                <h6>John Doe</h6>
+                                                <span>CEO, TechStartup Inc.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-card glass-card text-center">
+                                        <div class="testimonial-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p class="testimonial-text">"The mobile app development was flawless. Great communication throughout the project, delivered on time, and the final product was exactly what we envisioned."</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/avatar-sj.svg" alt="Sarah Johnson avatar" class="testimonial-avatar" width="60" height="60" loading="lazy">
+                                            <div>
+                                                <h6>Sarah Johnson</h6>
+                                                <span>Product Manager, AppCo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="testimonial-card glass-card text-center">
+                                        <div class="testimonial-stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p class="testimonial-text">"Outstanding design sensibility and technical expertise. The brand identity package transformed our company image completely. A true professional in every sense."</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/avatar-mw.svg" alt="Mike Williams avatar" class="testimonial-avatar" width="60" height="60" loading="lazy">
+                                            <div>
+                                                <h6>Mike Williams</h6>
+                                                <span>Founder, DesignHub</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators mt-4 position-relative">
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT SECTION ==================== -->
+        <section id="contact" class="section-padding bg-section-alt" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header text-center reveal-3d">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title" id="contact-heading">Contact <span class="text-accent">Me</span></h2>
+                </div>
+                <div class="row mt-5 g-4">
+                    <div class="col-lg-5">
+                        <div class="reveal">
+                            <h4 class="mb-4">Let's work together</h4>
+                            <p class="text-muted-custom mb-4">Have a project in mind? Let's discuss how we can bring your ideas to life. Feel free to reach out through any of the channels below.</p>
+                            <div class="contact-info-list">
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Email</h6>
+                                        <a href="mailto:genave.adrien.prof@gmail.com">genave.adrien.prof@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Phone</h6>
+                                        <a href="tel:+23058281934">+230 5828 1934</a>
+                                    </div>
+                                </div>
+                                <div class="contact-info-item">
+                                    <div class="contact-info-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h6>Location</h6>
+                                        <span>Pointe aux Sables, Mauritius</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-socials mt-4">
+                                <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/genave-pierre-adrien-99a8a3343" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:genave.adrien.prof@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <form id="contactForm" class="contact-form glass-card reveal" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="contactName" name="name" placeholder="Your Name" required>
+                                        <label for="contactName">Your Name</label>
+                                        <div class="invalid-feedback">Please enter your name.</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="contactEmail" name="email" placeholder="Your Email" required>
+                                        <label for="contactEmail">Your Email</label>
+                                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="contactSubject" name="subject" placeholder="Subject" required>
+                                        <label for="contactSubject">Subject</label>
+                                        <div class="invalid-feedback">Please enter a subject.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="contactMessage" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                                        <label for="contactMessage">Your Message</label>
+                                        <div class="invalid-feedback">Please enter your message.</div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-accent btn-lg rounded-pill w-100" id="submitBtn">
+                                        <span class="btn-text"><i class="fa-solid fa-paper-plane me-2"></i>Send Message</span>
+                                        <span class="btn-loading d-none"><i class="fa-solid fa-spinner fa-spin me-2"></i>Sending...</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="formAlert" class="mt-3 d-none"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-section" aria-label="Footer">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <div class="col-lg-4">
+                    <a class="footer-brand fw-bold" href="#home">
+                        <span class="brand-accent">&lt;</span>Genave<span class="brand-accent">/&gt;</span>
+                    </a>
+                    <p class="text-muted-custom mt-3">Building impactful digital products across web, mobile, and gaming platforms from Mauritius to the world.</p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/Genave-ops" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/genave-pierre-adrien-99a8a3343" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:genave.adrien.prof@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-heading">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="footer-heading">Explore</h6>
+                    <ul class="footer-links">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h6 class="footer-heading">Newsletter</h6>
+                    <p class="text-muted-custom">Subscribe to get updates on my latest projects and articles.</p>
+                    <form class="newsletter-form d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Newsletter email">
+                        <button type="submit" class="btn btn-accent rounded-pill px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+                <p class="mb-0">&copy; 2026 <span class="text-accent">Genave Pierre Adrien</span>. All rights reserved.</p>
+                <p class="mb-0">Designed & Built with <i class="fa-solid fa-heart text-accent"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
