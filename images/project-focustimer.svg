@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg-ft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-ft)" rx="12"/>
+  <!-- Phone frame -->
+  <rect x="200" y="30" width="200" height="340" rx="20" fill="#1a1a2e" stroke="#ec4899" stroke-width="1.5"/>
+  <rect x="250" y="38" width="100" height="6" rx="3" fill="#0f0f1a"/>
+  <!-- Header -->
+  <text x="260" y="75" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Focus Timer</text>
+  <!-- Big timer circle -->
+  <circle cx="300" cy="170" r="65" fill="none" stroke="#1a1a2e" stroke-width="6"/>
+  <circle cx="300" cy="170" r="65" fill="none" stroke="#ec4899" stroke-width="6" stroke-dasharray="408" stroke-dashoffset="100" stroke-linecap="round" transform="rotate(-90 300 170)"/>
+  <text x="300" y="165" font-family="Consolas, monospace" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">18:42</text>
+  <text x="300" y="185" font-family="Arial" font-size="9" fill="#ec4899" text-anchor="middle" opacity="0.8">FOCUS SESSION</text>
+  <!-- Control buttons -->
+  <circle cx="265" cy="260" r="16" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="0.5"/>
+  <rect x="260" y="254" width="4" height="12" rx="1" fill="#ec4899"/>
+  <rect x="267" y="254" width="4" height="12" rx="1" fill="#ec4899"/>
+  <circle cx="300" cy="260" r="16" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="0.5"/>
+  <rect x="295" y="254" width="10" height="12" rx="1" fill="#ec4899"/>
+  <circle cx="335" cy="260" r="16" fill="#ec4899" opacity="0.15" stroke="#ec4899" stroke-width="0.5"/>
+  <polygon points="330,254 330,266 340,260" fill="#ec4899"/>
+  <!-- Session info -->
+  <rect x="218" y="290" width="164" height="35" rx="8" fill="#0f0f1a" opacity="0.6"/>
+  <text x="235" y="306" font-family="Arial" font-size="7" fill="#ffffff" opacity="0.5">Sessions today</text>
+  <text x="235" y="318" font-family="Arial" font-size="11" font-weight="bold" fill="#ec4899">4 / 8</text>
+  <text x="330" y="306" font-family="Arial" font-size="7" fill="#ffffff" opacity="0.5">Total focus</text>
+  <text x="330" y="318" font-family="Arial" font-size="11" font-weight="bold" fill="#ec4899">1h 40m</text>
+  <!-- Bottom nav -->
+  <rect x="215" y="335" width="170" height="23" fill="#0f0f1a" opacity="0.8"/>
+  <ellipse cx="300" cy="200" rx="150" ry="80" fill="#ec4899" opacity="0.02"/>
+  <text x="300" y="390" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="3">FocusTimer</text>
+</svg>

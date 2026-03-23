@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg-yg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-yg)" rx="12"/>
+  <!-- Phone frame -->
+  <rect x="200" y="30" width="200" height="340" rx="20" fill="#1a1a2e" stroke="#a855f7" stroke-width="1.5"/>
+  <rect x="250" y="38" width="100" height="6" rx="3" fill="#0f0f1a"/>
+  <!-- Header -->
+  <text x="240" y="75" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Year Goals</text>
+  <text x="355" y="75" font-family="Arial" font-size="12" fill="#a855f7">🎯</text>
+  <!-- Progress overview -->
+  <rect x="218" y="85" width="164" height="50" rx="8" fill="#0f0f1a" stroke="#a855f7" stroke-width="0.5" opacity="0.8"/>
+  <text x="230" y="102" font-family="Arial" font-size="8" fill="#ffffff" opacity="0.5">2026 Progress</text>
+  <rect x="230" y="108" width="140" height="8" rx="4" fill="#1a1a2e"/>
+  <rect x="230" y="108" width="95" height="8" rx="4" fill="#a855f7" opacity="0.6"/>
+  <text x="340" y="126" font-family="Arial" font-size="9" font-weight="bold" fill="#a855f7">68%</text>
+  <!-- Goal cards -->
+  <rect x="218" y="142" width="164" height="48" rx="8" fill="#0f0f1a" stroke="#a855f7" stroke-width="0.5" opacity="0.8"/>
+  <circle cx="236" cy="158" r="10" fill="#10b981" opacity="0.15"/>
+  <text x="236" y="162" font-family="Arial" font-size="10" text-anchor="middle" fill="#10b981">✓</text>
+  <text x="254" y="158" font-family="Arial" font-size="8" font-weight="bold" fill="#ffffff" opacity="0.9">Learn Flutter</text>
+  <text x="254" y="170" font-family="Arial" font-size="7" fill="#10b981" opacity="0.7">Completed - 100%</text>
+  <rect x="254" y="176" width="100" height="4" rx="2" fill="#10b981" opacity="0.4"/>
+
+  <rect x="218" y="196" width="164" height="48" rx="8" fill="#0f0f1a" stroke="#a855f7" stroke-width="0.5" opacity="0.8"/>
+  <circle cx="236" cy="212" r="10" fill="#a855f7" opacity="0.15"/>
+  <text x="236" y="216" font-family="Arial" font-size="8" text-anchor="middle" fill="#a855f7" font-weight="bold">75</text>
+  <text x="254" y="212" font-family="Arial" font-size="8" font-weight="bold" fill="#ffffff" opacity="0.9">Build 5 SaaS Apps</text>
+  <text x="254" y="224" font-family="Arial" font-size="7" fill="#a855f7" opacity="0.7">In Progress - 3/5</text>
+  <rect x="254" y="230" width="60" height="4" rx="2" fill="#a855f7" opacity="0.4"/>
+
+  <rect x="218" y="250" width="164" height="48" rx="8" fill="#0f0f1a" stroke="#a855f7" stroke-width="0.5" opacity="0.8"/>
+  <circle cx="236" cy="266" r="10" fill="#f59e0b" opacity="0.15"/>
+  <text x="236" y="270" font-family="Arial" font-size="8" text-anchor="middle" fill="#f59e0b" font-weight="bold">40</text>
+  <text x="254" y="266" font-family="Arial" font-size="8" font-weight="bold" fill="#ffffff" opacity="0.9">Read 12 Books</text>
+  <text x="254" y="278" font-family="Arial" font-size="7" fill="#f59e0b" opacity="0.7">In Progress - 5/12</text>
+  <rect x="254" y="284" width="42" height="4" rx="2" fill="#f59e0b" opacity="0.4"/>
+
+  <!-- Add goal button -->
+  <rect x="250" y="308" width="100" height="24" rx="12" fill="#a855f7" opacity="0.2" stroke="#a855f7" stroke-width="0.5"/>
+  <text x="300" y="324" font-family="Arial" font-size="8" fill="#a855f7" text-anchor="middle">+ Add Goal</text>
+  <!-- Bottom nav -->
+  <rect x="215" y="340" width="170" height="18" fill="#0f0f1a" opacity="0.8"/>
+  <text x="300" y="390" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="3">Year Goals</text>
+</svg>

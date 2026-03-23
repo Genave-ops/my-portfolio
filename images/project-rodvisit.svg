@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg-rv" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-rv)" rx="12"/>
+  <g opacity="0.05">
+    <line x1="0" y1="80" x2="600" y2="80" stroke="#06b6d4" stroke-width="0.5"/>
+    <line x1="0" y1="160" x2="600" y2="160" stroke="#06b6d4" stroke-width="0.5"/>
+    <line x1="0" y1="240" x2="600" y2="240" stroke="#06b6d4" stroke-width="0.5"/>
+    <line x1="0" y1="320" x2="600" y2="320" stroke="#06b6d4" stroke-width="0.5"/>
+  </g>
+  <!-- Terminal window -->
+  <rect x="80" y="40" width="440" height="300" rx="8" fill="#1a1a2e" stroke="#06b6d4" stroke-width="1.5" opacity="0.9"/>
+  <rect x="80" y="40" width="440" height="30" rx="8" fill="#0f0f1a"/>
+  <rect x="80" y="58" width="440" height="12" fill="#0f0f1a"/>
+  <circle cx="100" cy="55" r="5" fill="#ff5f57"/>
+  <circle cx="116" cy="55" r="5" fill="#febc2e"/>
+  <circle cx="132" cy="55" r="5" fill="#28c840"/>
+  <text x="260" y="58" font-family="Consolas" font-size="9" fill="#06b6d4" opacity="0.7" text-anchor="middle">RodVisit API</text>
+  <!-- API endpoints -->
+  <text x="100" y="90" font-family="Consolas, monospace" font-size="9" fill="#06b6d4" opacity="0.5">$ FastAPI Server running on port 8000</text>
+  <text x="100" y="110" font-family="Consolas, monospace" font-size="9" fill="#10b981">GET</text>
+  <text x="135" y="110" font-family="Consolas, monospace" font-size="9" fill="#ffffff" opacity="0.7">/api/locations</text>
+  <text x="290" y="110" font-family="Consolas, monospace" font-size="9" fill="#10b981" opacity="0.6">200 OK</text>
+  <text x="100" y="130" font-family="Consolas, monospace" font-size="9" fill="#f59e0b">POST</text>
+  <text x="140" y="130" font-family="Consolas, monospace" font-size="9" fill="#ffffff" opacity="0.7">/api/scan-qr</text>
+  <text x="290" y="130" font-family="Consolas, monospace" font-size="9" fill="#10b981" opacity="0.6">201 Created</text>
+  <text x="100" y="150" font-family="Consolas, monospace" font-size="9" fill="#10b981">GET</text>
+  <text x="135" y="150" font-family="Consolas, monospace" font-size="9" fill="#ffffff" opacity="0.7">/api/leaderboard</text>
+  <text x="290" y="150" font-family="Consolas, monospace" font-size="9" fill="#10b981" opacity="0.6">200 OK</text>
+  <text x="100" y="170" font-family="Consolas, monospace" font-size="9" fill="#f59e0b">POST</text>
+  <text x="140" y="170" font-family="Consolas, monospace" font-size="9" fill="#ffffff" opacity="0.7">/api/auth/login</text>
+  <text x="290" y="170" font-family="Consolas, monospace" font-size="9" fill="#10b981" opacity="0.6">200 OK</text>
+  <!-- JSON response -->
+  <rect x="100" y="185" width="340" height="100" rx="4" fill="#0a0a0a" opacity="0.6"/>
+  <text x="112" y="202" font-family="Consolas" font-size="8" fill="#06b6d4">// Response: /api/leaderboard</text>
+  <text x="112" y="216" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.7">{</text>
+  <text x="120" y="230" font-family="Consolas" font-size="8" fill="#f59e0b">"users"</text>
+  <text x="165" y="230" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">: [</text>
+  <text x="130" y="244" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">{ </text>
+  <text x="142" y="244" font-family="Consolas" font-size="8" fill="#f59e0b">"name"</text>
+  <text x="180" y="244" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">: </text>
+  <text x="188" y="244" font-family="Consolas" font-size="8" fill="#10b981">"Genave"</text>
+  <text x="238" y="244" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">, </text>
+  <text x="248" y="244" font-family="Consolas" font-size="8" fill="#f59e0b">"xp"</text>
+  <text x="272" y="244" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">: </text>
+  <text x="280" y="244" font-family="Consolas" font-size="8" fill="#06b6d4">2450</text>
+  <text x="310" y="244" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5"> }</text>
+  <text x="120" y="258" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.5">  ]</text>
+  <text x="112" y="272" font-family="Consolas" font-size="8" fill="#ffffff" opacity="0.7">}</text>
+  <!-- Map pin icon -->
+  <circle cx="480" cy="240" r="30" fill="#06b6d4" opacity="0.05" stroke="#06b6d4" stroke-width="0.5"/>
+  <text x="480" y="245" font-family="Arial" font-size="20" text-anchor="middle" fill="#06b6d4" opacity="0.4">📍</text>
+  <ellipse cx="300" cy="200" rx="200" ry="100" fill="#06b6d4" opacity="0.02"/>
+  <text x="300" y="370" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="3">RodVisit</text>
+</svg>

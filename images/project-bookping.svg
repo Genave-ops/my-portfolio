@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="bg-bp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </linearGradient>
+    <linearGradient id="accent-bp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg-bp)" rx="12"/>
+  <g opacity="0.05">
+    <line x1="0" y1="50" x2="600" y2="50" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="600" y2="100" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="600" y2="150" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="600" y2="200" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="600" y2="250" stroke="#10b981" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#10b981" stroke-width="0.5"/>
+  </g>
+  <!-- Phone frame -->
+  <rect x="200" y="30" width="200" height="340" rx="20" fill="#1a1a2e" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="250" y="38" width="100" height="6" rx="3" fill="#0f0f1a"/>
+  <!-- Status bar -->
+  <rect x="215" y="55" width="170" height="20" rx="0" fill="transparent"/>
+  <text x="225" y="68" font-family="Arial" font-size="9" fill="#10b981" opacity="0.7">9:41</text>
+  <!-- Header -->
+  <rect x="215" y="80" width="170" height="30" fill="transparent"/>
+  <text x="225" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">BookPing</text>
+  <circle cx="375" cy="95" r="8" fill="#10b981" opacity="0.3"/>
+  <text x="372" y="98" font-family="Arial" font-size="10" fill="#10b981">+</text>
+  <!-- Calendar grid -->
+  <rect x="215" y="115" width="170" height="100" rx="8" fill="#0f0f1a" stroke="#10b981" stroke-width="0.5" opacity="0.6"/>
+  <text x="270" y="132" font-family="Arial" font-size="10" fill="#ffffff" opacity="0.8" text-anchor="middle">March 2026</text>
+  <g font-family="Arial" font-size="7" fill="#ffffff" opacity="0.4">
+    <text x="228" y="148">M</text><text x="248" y="148">T</text><text x="268" y="148">W</text>
+    <text x="288" y="148">T</text><text x="308" y="148">F</text><text x="328" y="148">S</text><text x="348" y="148">S</text>
+  </g>
+  <g font-family="Arial" font-size="7" fill="#ffffff" opacity="0.5">
+    <text x="228" y="162">1</text><text x="248" y="162">2</text><text x="268" y="162">3</text>
+    <text x="288" y="162">4</text><text x="308" y="162">5</text><text x="328" y="162">6</text><text x="348" y="162">7</text>
+  </g>
+  <circle cx="270" cy="170" r="8" fill="#10b981" opacity="0.3"/>
+  <g font-family="Arial" font-size="7" fill="#ffffff" opacity="0.5">
+    <text x="228" y="176">8</text><text x="248" y="176">9</text><text x="266" y="176">10</text>
+    <text x="286" y="176">11</text><text x="306" y="176">12</text><text x="326" y="176">13</text><text x="346" y="176">14</text>
+  </g>
+  <!-- Appointment cards -->
+  <rect x="215" y="222" width="170" height="40" rx="6" fill="#0f0f1a" stroke="#10b981" stroke-width="0.5" opacity="0.8"/>
+  <rect x="219" y="226" width="3" height="32" rx="1.5" fill="#10b981"/>
+  <text x="230" y="240" font-family="Arial" font-size="8" fill="#ffffff" opacity="0.9">Haircut - Sarah M.</text>
+  <text x="230" y="252" font-family="Arial" font-size="7" fill="#10b981" opacity="0.7">10:00 AM - 10:45 AM</text>
+  <rect x="215" y="268" width="170" height="40" rx="6" fill="#0f0f1a" stroke="#10b981" stroke-width="0.5" opacity="0.8"/>
+  <rect x="219" y="272" width="3" height="32" rx="1.5" fill="#f59e0b"/>
+  <text x="230" y="286" font-family="Arial" font-size="8" fill="#ffffff" opacity="0.9">Consultation - John D.</text>
+  <text x="230" y="298" font-family="Arial" font-size="7" fill="#f59e0b" opacity="0.7">11:30 AM - 12:00 PM</text>
+  <!-- Bottom nav -->
+  <rect x="215" y="320" width="170" height="35" rx="0" fill="#0f0f1a" opacity="0.8"/>
+  <circle cx="250" cy="338" r="8" fill="#10b981" opacity="0.2"/>
+  <circle cx="300" cy="338" r="8" fill="#10b981" opacity="0.5"/>
+  <circle cx="350" cy="338" r="8" fill="#10b981" opacity="0.2"/>
+  <ellipse cx="300" cy="200" rx="150" ry="80" fill="#10b981" opacity="0.02"/>
+  <text x="300" y="390" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="3">BookPing</text>
+</svg>
